@@ -23,7 +23,7 @@ def result():
     
 def detect(text):
     #this is the list of keywords we are using to check for bias
-    keywords = ["mankind", "manpower", "man", "fathering", "mothering", "fireman", "policeman", "postman", "chairman", "chairwoman", "his", "her", "anchorman", "anchorwoman", "clergyman", "congressman"]
+    keywords = ["mankind", "manpower", "woman", "man", "fathering", "mothering", "fireman", "policeman", "postman", "chairman", "chairwoman", "his", "her", "anchorman", "anchorwoman", "clergyman", "congressman", "men", "women", "he", "she", "boys", "girls", ]
 
     count_biased = 0
     non_count = 0
