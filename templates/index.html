@@ -1,0 +1,33 @@
+<!DOCTYPEHTML>
+<html>
+    <head>
+
+    </script>
+        
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    </head>
+    <body>
+        
+
+        <header>
+            <h1 id="heading">Gender Bias Detector</h1>
+        </header>
+    
+
+<h2 class="move">Enter text below: </h2>
+      <div>  <form action="/result" method="POST">
+            <input type="text" name = "text_input" id = "text_input" class="girls">
+            <button class="detector" onclick="toggle()" id="detector">Detect</button>
+        </form>
+    </div>
+
+        {% if result %} 
+            <p>{{ result }}%</p>
+        {% endif %}
+
+
+    </body>
+</html>
